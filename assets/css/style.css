@@ -1,0 +1,158 @@
+
+:root {
+    --main-color: #ff4100;
+    --main-hover-color: #eb4d17;
+}
+body {
+    background-color: #101115;
+    color: #85879d;
+    line-height: 1.7em;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.125rem;
+    background-image: linear-gradient(to bottom, rgb(12 14 17), rgb(19 20 32 / 95%)), url(../images/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.form-control {
+    color: #85879d;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: 0px 0px 4px 0px var(--main-color);
+    color: #85879d;
+}
+.bg-progress {
+    background-color: var(--main-hover-color);
+}
+.text-color {
+    color: #c4c9d9;
+}
+.text-color:focus {
+    color: #c4c9d9;
+}
+.btn-primary {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.btn-primary:hover {
+    background-color: var(--main-hover-color);
+    border-color: var(--main-hover-color);
+}
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: var(--main-hover-color);
+    border-color: var(--main-hover-color);
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
+}
+.btn-primary.focus,
+.btn-primary:focus {
+    background-color: var(--main-hover-color);
+    border-color: var(--main-hover-color);
+    box-shadow: none;
+}
+.header-content {
+    padding: 220px 0;
+}
+.sidebar {
+    background: #252527;
+    position: sticky;
+    top: 20px;
+}
+.profile-pic {
+    max-width: 120px;
+}
+.name {
+    font-size: 1.5rem;
+    color: #fff;
+}
+.contact-info {
+    font-size: 1rem;
+}
+.contact-info a {
+    color: #fcf8f6;
+}
+.contact-info img {
+    filter: invert(1);
+    height: 16px;
+}
+.social-icons ul li {
+    display: inline-block;
+    margin: 24px 5px;
+}
+.social-icons svg {
+    width: 22px;
+    fill: #fcf8f6;
+}
+.close-form svg {
+    fill: #fff;
+    width: 15px;
+}
+.close-form:focus {
+    outline: none;
+}
+.form-title {
+    font-size: 1.1rem;
+    color: #fff;
+}
+.contact-form {
+    display: none;
+}
+.section {
+    background: #252527;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+}
+.content h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    position: relative;
+}
+.content h3:before {
+    content: "";
+    width: 120px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--main-color), transparent);
+    position: absolute;
+    bottom: -6px;
+    left: -12px;
+}
+.content strong,
+.tiny-super {
+    color: #c4c9d9;
+}
+
+.wrapper { position: relative; }
+.imaged {
+    vertical-align: bottom; margin-right: 24px; margin-top: 12px;
+    width:150px; height:150px;
+}
+.spanned {
+    font-size:18px; display: inline-block;
+    position: absolute;
+    /*  push it by 50% from top  */
+    top: 50%;
+    /*  push it back of it's own height  */
+    transform: translateY(-50%);
+}
+
+@media (max-width: 767.98px) {
+    body {
+        font-size: 10rem;
+    }
+
+    .content h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    body {
+        font-size: 0.9rem;
+    }
+    .content h3 {
+        font-size: 1.05rem;
+    }
+}

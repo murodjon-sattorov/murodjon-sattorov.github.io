@@ -1,7 +1,8 @@
 
 :root {
-    --main-color: #ff4100;
-    --main-hover-color: #eb4d17;
+    --main-color: #EE823B;
+    --main-hover-color: #f16e18;
+    --progress-hover-color: #43B584;
 }
 body {
     background-color: #101115;
@@ -25,7 +26,7 @@ body {
     color: #85879d;
 }
 .bg-progress {
-    background-color: var(--main-hover-color);
+    background-color: var(--progress-hover-color);
 }
 .text-color {
     color: #c4c9d9;
@@ -63,7 +64,11 @@ body {
     top: 20px;
 }
 .profile-pic {
-    max-width: 120px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ffffff; /* White stroke */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 .name {
     font-size: 1.5rem;
@@ -78,6 +83,18 @@ body {
 .contact-info img {
     filter: invert(1);
     height: 16px;
+}
+.email-link {
+    display: block;
+    word-wrap: break-word;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 5px;
+    overflow-wrap: anywhere;
+}
+.contact-text {
+    text-decoration: none;  /* Removes underline */
 }
 .social-icons ul li {
     display: inline-block;
@@ -140,7 +157,7 @@ body {
 
 @media (max-width: 767.98px) {
     body {
-        font-size: 10rem;
+        font-size: 4vw;
     }
 
     .content h3 {
@@ -150,9 +167,18 @@ body {
 
 @media (max-width: 575.98px) {
     body {
-        font-size: 0.9rem;
+        font-size: 3.5vw;
     }
     .content h3 {
         font-size: 1.05rem;
+    }
+}
+/* Tablet Portrait (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .about-section h1, .about-section h2, .about-section p {
+        font-size: 1.1rem; /* Adjust the font size for better readability */
+    }
+    .about-section h1 {
+        font-size: 2rem; /* Slightly reduce the heading size */
     }
 }
